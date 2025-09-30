@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* hero-gallery Section */
+.hero-gallery {
+    width: 100%;
+    height: 250px; 
+    background: linear-gradient(to right, #0a3d62, #1e90ff); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 65px;
+}
+
+.hero-gallery-title-gallery {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+.hero-gallery-title-gallery span {
+    color: #FFD700;
+}
+
+.hero-gallery-subtitle-gallery {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-gallery {
+        height: 220px;
+    }
+    .hero-gallery-title-gallery {
+        font-size: 2.2rem;
+    }
+    .hero-gallery-subtitle-gallery {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-gallery {
+        height: 200px;
+    }
+    .hero-gallery-title-gallery {
+        font-size: 2rem;
+    }
+    .hero-gallery-subtitle-gallery {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-gallery {
+        height: 180px;
+        padding: 15px;
+    }
+    .hero-gallery-title-gallery {
+        font-size: 1.8rem;
+        line-height: 1.1;
+    }
+    .hero-gallery-subtitle-gallery {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Vision and Mission  */
+.vision-mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 10%;
+    background: white;
+}
+
+.vision-mission-text {
+    flex: 1;
+    text-align: left;
+}
+
+.vision-mission-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #002147;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.vision-mission-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.vision-mission-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.vision-box,
+.mission-box {
+    background: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+}
+
+.vision-box:hover,
+.mission-box:hover {
+    transform: translateY(-5px);
+}
+
+.vision-box i,
+.mission-box i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.vision-box p,
+.mission-box p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Right Side - Additional Vision & Mission Details */
+.vision-mission-extra {
+    flex: 1;
+    background: #f0f8ff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.vision-mission-extra h3 {
+    font-size: 1.5rem;
+    color: #002147;
+    margin-bottom: 10px;
+}
+
+.vision-mission-extra p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .vision-mission-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .vision-mission-text {
+        text-align: center;
+    }
+
+    .vision-box,
+    .mission-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vision-mission-extra {
+        text-align: center;
+    }
+}
+
+
+/* Section Container */
+.why-skillam {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Title & Subtitle */
+.why-skillam h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #002147;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.why-skillam p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* 🔹 Grid Layout for Key Benefits */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.benefit-box {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-box img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.benefit-box h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #002147;
+}
+
+.benefit-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* 🔹 Expandable Exclusive Benefits */
+.exclusive-benefits {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.exclusive-benefits h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #002147;
+    text-align: center;
+}
+
+.dropdown {
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #002147;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.dropdown.active span {
+    transform: rotate(90deg);
+}
+
+.dropdown.active + .dropdown-content {
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .why-skillam {
+        width: 90%;
+    }
+   
+    .why-skillam h2 {
+        font-size: 2.2rem;
+    }
+
+    .why-skillam p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Section Container */
+.teachers-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.teachers-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #00274D;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.teachers-title span {
+    color: #007bff;
+}
+
+.teachers-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Teacher Card */
+.teacher-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.teacher-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.teacher-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007bff;
+}
+
+.teacher-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #002147;
+}
+
+.teacher-role {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.teacher-description {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .teachers-title {
+        font-size: 2rem;
+    }
+
+    .teachers-subtitle {
+        font-size: 16px;
+    }
+
+    .teacher-card {
+        padding: 15px;
+    }
+}
+
+
+/* Our Achievements Section */
+.achievements-container {
+    background: #ffffff;
+    color: #002147;
+    padding: 50px 0;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.achievements-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #002147;
+    text-align: center;
+}
+
+.achievements-subtitle {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+    color: #0056b3;
+    text-align: center;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.achievement-box {
+    background: rgba(0, 33, 71, 0.05);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid #0056b3;
+}
+
+.achievement-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 86, 179, 0.3);
+}
+
+.achievement-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0056b3;
+}
+
+.achievement-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #002147;
+}
+
+.achievement-description {
+    font-size: 15px;
+    opacity: 0.8;
+    margin-top: 8px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.achievements-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .achievements-title {
+        font-size: 2rem;
+    }
+}
