@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillam</title>
+    <meta name="description" content="Skillam Institute offers English, Aviation, Computer, and CAD Courses. Join us for the best training and placements.">
+    <meta name="keywords" content="English Speaking, Aviation Training, Computer Course, CAD Training, Skillam Institute">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="icon" type="image/png" href="images/skillam logo.webp">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <!-- Navbar for Mobile-->
+    <nav class="navbar">
+        <a class="anav" href="index.html"><div class="logo">Skillam</div></a>
+
+        <div class="navbar-right">
+        <a href="tel:+91 81308 46706" class="call-link">
+             +91 81308 46706
+        </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">'</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+       
+        <!-- Courses Dropdown -->
+        <div class="expandable" onclick="toggleDropdown('coursesDropdown')">
+            Courses <span>▶</span>
+        </div>
+        <div class="mobile-dropdown" id="coursesDropdown">
+            <a href="english.html">English</a>
+           
+            <!-- Aviation Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('aviationDropdown')">
+                Aviation <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="aviationDropdown">
+                <a href="aviation.html#cabin">Cabin Crew</a>
+                <a href="aviation.html#ground">Ground Staff</a>
+                <a href="aviation.html#aocs">AO Course</a>
+            </div>
+           
+            <!-- Computer Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('computerDropdown')">
+                Computer <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="computerDropdown">
+                <a href="computer.html#basic">Basic Computer</a>
+                <a href="computer.html#advanced">Advanced Computer</a>
+            </div>
+
+            <!-- CAD Course Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('cadDropdown')">
+                CAD Course <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="cadDropdown">
+                <a href="#">1 Course</a>
+                <a href="#">2 Course</a>
+                <a href="#">3 Course</a>
+                <a href="#">4 Course</a>
+            </div>
+        </div>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="#contact">Contact Us</a>
+        <a href="tel:+918130846706" class="phone-btn">📞 +91 81308 46706</a>
+    </div>
+
+    <!-- Navbar for Desktop -->
+    <nav class="navbard">
+        <a class="anavd" href="index.html"><div class="logod">Skillam</div></a> 
+        <ul class="nav-linksd" id="nav-linksd">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdownd">
+                <a href="#">Courses ▼</a>
+                <ul class="dropdown-menud">
+                    <li><a href="english.html">English Language</a></li>
+                    <li class="dropdownd">
+                        <a href="#">Aviation Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="aviation.html#cabin">Cabin Crew Training</a></li>
+                            <li><a href="aviation.html#ground">Ground Staff Training</a></li>
+                            <li><a href="aviation.html#aocs">AO/CS Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">Computer Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="computer.html#basic">Basic Computer</a></li>
+                            <li><a href="computer.html#advanced">Advance Computer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">CAD Course ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="#">1st Course</a></li>
+                            <li><a href="#">2nd Course</a></li>
+                            <li><a href="#">3rd Course</a></li>
+                            <li><a href="#">4th Course</a></li>
+                            <li><a href="#">5th Course</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero section  -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Give Wings to Your Career at <span>Skillam!</span></h1>
+            <p>Take off your career with expert training in aviation.</p>
+            <div class="hero-buttons">
+                <a href="#course" class="btn1 primary-btn1">Explore Courses</a>
+                <a href="#contact" class="btn1 secondary-btn">CONTACT US 💬</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/front Air h.webp" alt="Learn English at Skillam">
+        </div>
+    </section>
+
+    <!-- offers ribbon  -->
+    <section class="offer-ribbon">
+        <div class="ribbon-text">
+            <span>
+            🎓 Join <p class="highlight">Skillam</p> Aviation & Fly High in Your Career! 
+            ✈️ Get Certified with <p class="highlight">Industry-Leading</p>Aviation Courses 
+            📚 <p class="highlight">Special Batch Offers:</p> Enroll Now & Save! 
+            🏆 Learn from Expert Trainers with Real-World Experience. 
+            🪔 <p class="highlight">Special Diwali Offer: </p>Get Extra Discounts on All Courses!
+            </span>
+
+            <span>
+            🎓 Join <p class="highlight">Skillam</p> Aviation & Fly High in Your Career! 
+            ✈️ Get Certified with <p class="highlight">Industry-Leading</p>Aviation Courses 
+            📚 <p class="highlight">Special Batch Offers:</p> Enroll Now & Save! 
+            🏆 Learn from Expert Trainers with Real-World Experience. 
+            🪔 <p class="highlight">Special Diwali Offer: </p>Get Extra Discounts on All Courses!
+            </span>
+        </div>
+    </section>
+
+    <!-- Text section  -->
+    <section class="airhostess-section">
+        <div class="airhostess-container">
+            <p>
+            No. 1 Air Hostess Academy in Delhi. Specialized in Cabin Crew, Air Hostess Course, Aviation, Hospitality, Travel Management, Personality Development. 
+            </p>
+        </div>
+    </section>
+
+    <!-- Wave divider  -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 120 20" preserveAspectRatio="none">
+            <path d="M0,10 C30,20 90,0 120,10 L120,20 L0,20 Z" fill="#0a3d62"></path>
+        </svg>
+    </div>
+
+    <!-- about section  -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About <span>Skillam</span></h2>
+                <p>
+                    Skillam Air Hostess Academy provides the chance to empower your wings and fly. We offer a wide host of leading courses such as air hostess course, cabin crew course, travel & hospitality management course, and many other specialized aviation courses. Dreams of owning a career above ground may come true quickly. Visit the outermost corners of the world while getting paid for that. Enter into the best industry of the world. The position of a flight attendant allows you to engage with people from all backgrounds.
+                </p>
+                <ul class="about-features">
+                    <li>✔ Interactive Learning Experience</li>
+                    <li>✔ Expert & Certified Trainers</li>
+                    <li>✔ Personalized Coaching</li>
+                    <li>✔ Practical & Real-Life Communication Skills</li>
+                </ul>
+                <a href="about.html" class="btn2 primary-btn">Know More</a>
+            </div>
+            <div class="about-image">
+                <video controls unmuted loop><source src="images/about us video.mp4" type="video/mp4"></video>
+                <!-- <img src="images/picture11.webp" alt="About Skillam - English Institute"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Batch Section -->
+    <section class="next-batch-section">
+        <div class="batch-content">
+            <h2>New Batch Announcement ✈️</h2>
+            <h3>Please fill the form to reserve your admission</h3>
+            <p class="date">New batch starting on <strong>7th August 2025</strong></p>
+            <p class="small-text">Countdown is finished!</p>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <a href="#contact" class="btn-contact">Contact Us</a>
+        </div>
+
+        <!-- Plane Animation -->
+        <div class="plane-animation">
+            <div class="plane"></div>
+            <div class="ribbon">Next Batch Starts Soon</div>
+        </div>
+    </section>
+
+    <!-- Zigzag Divider -->
+    <div class="zigzag-divider"></div>
+
+    <!-- Institute Stats Section -->
+    <section class="stats-section">
+    <div class="stats-container">
+        <div class="stat-item">
+            <img src="images/students.webp" alt="students">
+            <h3>1,500<span class="plus">+</span></h3>
+            <p>Students</p>
+        </div>
+ 
+        <div class="stat-item">
+            <img src="images/experience.webp" alt="years">
+            <h3>3<span class="plus">+</span></h3>
+            <p>Years</p>
+        </div>
+
+        <div class="stat-item">
+            <img src="images/awards.webp" alt="awards">
+            <h3>20<span class="plus">+</span></h3>
+            <p>Awards</p>
+        </div>
+
+        <div class="stat-item">
+            <img src="images/team leader.webp" alt="team">
+            <h3>25<span class="plus">+</span></h3>
+            <p>Team Members</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- line divider  -->
+    <div class="stats-line-divider"></div>
+
+    <!-- courses section  -->
+    <section id="course" class="courses">
+        <div class="container">
+            <h2 class="section-title1">Our <span>Courses</span></h2>
+            <p class="section-subtitle1">Enhance your skills with our expert-led training programs.</p>
+    
+            <div class="courses-grid">
+                <!-- English Language Course -->
+                <div class="course-card">
+                    <img src="images/english.webp" alt="English Language Course" loading="lazy">
+                    <h3>English Language</h3>
+                    <div class="course-duration">
+                </div>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Duration: 6 Months</strong> </p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Mode: Offline</strong></p>
+                    <p>Master English communication skills with expert-led training.</p>
+                    <a href="english.html" class="btn">View More</a>
+                </div>
+    
+                <!-- Aviation Training Course -->
+                <div class="course-card">
+                    <img src="images/aviation.webp" alt="Aviation Training" loading="lazy">
+                    <h3>Aviation Training</h3>
+                    <div class="course-duration">
+                </div>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Duration: 12 Months</strong> </p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Mode: Offline</strong></p>
+                    <p>Build a strong career in aviation with our specialized courses.</p>
+                    <a href="aviation.html" class="btn">View More</a>
+                </div>
+    
+                <!-- Computer Training Course -->
+                <div class="course-card">
+                    <img src="images/computer.webp" alt="Computer Training" loading="lazy">
+                    <h3>Computer Training</h3>
+                    <div class="course-duration">
+                </div>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Duration: 5 Months</strong> </p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Mode: Offline</strong></p>
+                    <p>Learn essential computer skills for a competitive edge.</p>
+                    <a href="computer.html" class="btn">View More</a>
+                </div>
+    
+                <!-- CAD Course -->
+                <div class="course-card">
+                    <img src="images/cad.webp" alt="CAD Course" loading="lazy">
+                    <h3>CAD Course</h3>
+                    <div class="course-duration">
+                </div>
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Duration: 6 Months</strong></p>
+                    <p><i class="fas fa-user-graduate"></i> <strong>Mode: Offline</strong></p>
+                    <p>Become a CAD expert with practical, hands-on training.</p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reason to choose Skillam  -->
+    <section class="aviation-booming1">
+        <img src="images/airplane.webp" alt="Flying Airplane" class="floating-plane">
+       
+        <h2>Reason to Choose <span>Skillam</span> Air Hostess Academy</h2>
+        <p>Our unique curriculum, innovative pedagogy, and new projects enable us to prepare students to work in the world's No. 1 industry, the service industry. We are the ideal academy for students who wish to work in the service industry.</p>
+
+        <div class="growth-container">
+            <div class="growth-card">
+                <i>📈</i>
+                <h3>BEST COURSES</h3>
+                <p>The best cabin crew training facility in India is Delhi Air Hostess Academy. It provides you with practical experience in the airline service sector using cutting-edge technologies.</p>
+            </div>
+            <div class="growth-card">
+                <i>🌍</i>
+                <h3>PRACTICAL TRAINING</h3>
+                <p>Our students are motivated to apply their knowledge to different service industry sectors by our practical trainings and hands-on experience.</p>
+            </div>
+            <div class="growth-card">
+                <i>🛫</i>
+                <h3>A WELL FACILITATED INFRASTRUCTURE</h3>
+                <p>Our classrooms are equipped with all the latest technology to educate today's professionals. You can get the best state of the art facilities at out institute.</p>
+            </div>
+            <div class="growth-card">
+                <i>📊</i>
+                <h3>WELL-CRAFTED COURSES</h3>
+                <p>Because we believe in delivering individualised education in a public setting, our ongoing, custom courses are a great fit for every student and their unique needs.</p>
+            </div>
+            <div class="growth-card">
+                <i>🛩️</i>
+                <h3>MODERN CLASSROOMS</h3>
+                <p>Our classrooms are equipped with all the latest technology to educate today's professionals. We also provide you mock in-flight training for real world exposure.</p>
+            </div>
+             <div class="growth-card">
+                <i>️⛳️</i>
+                <h3>FOCUS ON EDUCATION</h3>
+                <p>Delhi Air Hostess Academy lays deep emphasis on education and we aim at catering the highest quality of education to all our students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Logos  -->
+    <section class="placements-section">
+        <h2>Skillam <span>Work With Leading Companies</span></h2>
+        <p>We ensure to arrange the best possible career opportunity</p>
+
+        <!-- Placement Stats -->
+        <div class="stats-container">
+            <div class="stats-box">
+                <h3>200+</h3>
+                <p>Students Placed</p>
+            </div>
+            <div class="stats-box">
+                <h3>10+</h3>
+                <p>Partnered Airlines</p>
+            </div>
+            <div class="stats-box">
+                <h3>₹5 - ₹12 LPA</h3>
+                <p>Average Salary</p>
+            </div>
+            <div class="stats-box">
+                <h3>98%</h3>
+                <p>Placement Rate</p>
+            </div>
+        </div>
+
+        <!-- Recruiter Logos -->
+        <div class="recruiter-logos">
+            <a href="https://www.goindigo.in/" target="_blank">
+                <img src="images/Indigo.webp" alt="Indigo">
+            </a>
+
+            <a href="https://www.emirates.com/" target="_blank">
+                <img src="images/Emirates.webp" alt="Emirates">
+            </a>
+
+            <a href="https://www.qatarairways.com/" target="_blank">
+                <img src="images/Qatar Airways.webp" alt="Qatar Airways">
+            </a>
+
+            <a href="https://www.spicejet.com/" target="_blank">
+                <img src="images/SpiceJet.webp" alt="SpiceJet">
+            </a>
+
+            <a href="https://www.lufthansa.com/" target="_blank">
+                <img src="images/lufthansa.webp" alt="Lufthansa">
+            </a>
+
+            <a href="https://www.airindia.com/" target="_blank">
+                <img src="images/air india.webp" alt="Air India">
+            </a>
+        </div>
+
+        <!-- Placement Process -->
+        <div class="process-container">
+            <div class="process-step">
+                <h3>Resume & Soft Skills</h3>
+                <p>We help you build a strong profile & develop communication skills.</p>
+            </div>
+            <div class="process-step">
+                <h3>Mock Interviews</h3>
+                <p>Get hands-on practice with real industry experts.</p>
+            </div>
+            <div class="process-step">
+                <h3>Direct Airline Interviews</h3>
+                <p>We connect you with top recruiters for real job interviews.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- gallery section  -->
+    <section class="gallery-section">
+        <div class="gallery-container">
+            <div class="gallery-grid">
+                <div class="gallery-item english"><img src="images/picture1.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture2.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture3.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture4.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture5.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture6.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture7.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture8.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture9.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture10.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture11.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture12.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture13.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture14.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture15.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture16.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture17.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture18.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture19.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture20.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture21.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture22.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture23.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture24.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture25.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture26.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture27.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture28.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture29.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture30.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture31.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture32.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture33.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture34.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture35.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item english"><img src="images/picture36.webp" alt="English Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture37.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item computer"><img src="images/picture38.webp" alt="Computer Course" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture39.webp" alt="Aviation Training" loading="lazy"></div>
+                <div class="gallery-item aviation"><img src="images/picture40.webp" alt="Aviation Training" loading="lazy"></div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Lightbox for Image Preview -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="" class="lightbox-img"> 
+    </div>
+
+    <!-- testimonials section  -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title2">What Our <span>Students Say</span></h2>
+            <p class="section-subtitle3">Real experiences from our learners.</p>
+
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client1-optimized.webp" alt="Student 1" class="student-photo" loading="lazy">
+                        <h3>Mohit Sharma</h3>
+                        <p class="course">Skillam Student</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"I truly enjoyed my time here. The environment is very welcoming, and everyone is supportive which makes the overall experience smooth and stress-free."</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client2-optimized.webp" alt="Student 2" class="student-photo" loading="lazy">
+                        <h3>Priya Verma</h3>
+                        <p class="course">Skillam Student</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"The institute maintains a high level of professionalism. From the way they guide to the way they handle every detail, everything feels well organized and reliable."</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client3-optimized.webp" alt="Student 3" class="student-photo" loading="lazy">
+                        <h3>Arjun Singh</h3>
+                        <p class="course">Skillam Student</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"I felt motivated and confident throughout. The atmosphere is positive, and they genuinely focus on making sure each individual feels valued."</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/client4-optimized.webp" alt="Student 4" class="student-photo" loading="lazy">
+                        <h3>Anjali Gupta</h3>
+                        <p class="course">Skillam Student</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"It’s rare to find such a friendly and helpful place. They pay attention to every small detail and make you feel comfortable from day one."</p>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/Sids.webp" alt="Student 5" class="student-photo" loading="lazy">
+                        <h3>Siddharth Singh</h3>
+                        <p class="course">Skillam Student</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-message">"I am very happy with the experience. The people here are approachable, encouraging, and always ready to provide the right guidance whenever needed."</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <img src="images/you next.webp" alt="Student 5" class="student-photo" loading="lazy">
+                        <h3>You Next</h3>
+                        <p class="course">Be part of our success stories</p>
+                        <div class="rating">⭐⭐⭐⭐⭐</div>
+                        <a href="#contact" class="btn-contact">Start Your Journey</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- faq section  -->
+    <section id="faqs" class="faqs-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions about Skillam courses & programs.</p>
+    
+            <div class="faq-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">What courses does Skillam offer for English learning?</button>
+                    <div class="faq-answer">
+                        <p>Skillam provides Spoken English, Business English, IELTS Preparation, and Personality Development courses.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">How long does it take to become fluent in English?</button>
+                    <div class="faq-answer">
+                        <p>It depends on your current level, but with regular practice and our structured courses, you can see improvement within 3-6 months.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">What courses does Skillam Aviation offer?</button>
+                    <div class="faq-answer">
+                        <p>Skillam Aviation offers a variety of aviation-related programs designed to build skills for a successful career in the aviation industry.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">What teaching methods does Skillam use?</button>
+                    <div class="faq-answer">
+                        <p>We use interactive learning techniques, role-playing, real-life conversations, and personalized coaching to enhance your English skills.</p>
+                    </div>
+                </div>
+    
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">Who can join Skillam?</button>
+                    <div class="faq-answer">
+                        <p>Anyone! Our courses are designed for beginners, professionals, and students looking to upskill.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question"> Do I need prior experience to join the course?</button>
+                    <div class="faq-answer">
+                        <p>No prior experience is required. Our courses are designed for both beginners and professionals seeking to enhance their skills.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="faq-item">
+                    <button class="faq-question">Do I get a certificate after completion?</button>
+                    <div class="faq-answer">
+                        <p>Yes! All Skillam courses come with a verified certificate upon successful completion.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 8 -->
+                <div class="faq-item">
+                    <button class="faq-question">Does Skillam Aviation provide placement assistance?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer placement support to help you secure opportunities in the aviation industry.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 9 -->
+                <div class="faq-item">
+                    <button class="faq-question">How can I enroll in a course at Skillam?</button>
+                    <div class="faq-answer">
+                        <p>You can visit our institute, call us, or enroll directly through our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section  -->
+    <section id="skillam-social" class="social-section">
+        <div class="container">
+            <div class="social-header">
+                <h2>Connect with Skillam</h2>
+                <p>Follow us on Instagram & YouTube for latest updates, tips, and inspiration.</p>
+            </div>
+
+            <div class="social-cards">
+                <!-- Instagram Card -->
+                <div class="social-card instagram">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" loading="lazy">
+                    <h3>Instagram</h3>
+                    <p>See our latest events, success stories, and behind-the-scenes moments.</p>
+                    <a href="https://www.instagram.com/skillam_edtech" target="_blank" class="btn">Follow Us</a>
+                </div>
+
+                <!-- YouTube Card -->
+                <div class="social-card youtube">
+                    <img src="images/youtube.webp" alt="YouTube" loading="lazy">
+                    <h3>YouTube</h3>
+                    <p>Watch expert tutorials, student testimonials, and course highlights.</p>
+                    <a href="https://www.youtube.com/@SKILLUP_WITH_SKILLAM" target="_blank" class="btn">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch with Us</h2>
+            <p class="section-subtitle">Have any questions? Fill out the form below and we will get back to you soon.</p>
+    
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contact-form" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="course">Select Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">-- Select a Course --</option>
+                                <option value="English Language">English Language</option>
+                                <option value="Aviation Training">Aviation Training</option>
+                                <option value="Computer Training">Computer Training</option>
+                                <option value="CAD Course">CAD Course</option>
+                            </select>
+                        </div>
+    
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required placeholder="Write your query here..."></textarea>
+                        </div>
+    
+                        <button type="submit" class="submit-btn">Submit Query</button>
+
+                        <div id="success-message" class="success-message">Sent successfully!</div>
+                    </form>
+
+                    
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.3544868518443!2d77.02373029678955!3d28.619135999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d05eb7542b41b%3A0xda54a26bb29a46f0!2sSkillam%20Education%20and%20Technology!5e0!3m2!1sen!2sin!4v1744286611968!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <h3>Delhi Branch</h3>
+                    <p><strong>Address:</strong> Metro Pillar No. 796, Dwarka Mor, Plot No. 456 1st Floor, New Delhi, Delhi 110078</p>
+                    <p><strong>Email:</strong> Info@skillamedtech.in</p>
+                    <p><strong>Phone 1:</strong> 011-4506 6413</p>
+                    <p><strong>Phone 2:</strong> +91 81308 46706</p>
+
+
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.916074614512!2d80.29815247525411!3d26.42618477694054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47c7c6c274c7%3A0x96246d0cd5a59170!2sSkillam%20Education%20and%20Technology!5e0!3m2!1sen!2sin!4v1759064351138!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <h3>Kanpur Branch</h3>
+                    <p><strong>Address:</strong> Ground Floor, C-915, Thana Road, near Little Gems School, New, Barra, Kanpur, Uttar Pradesh 208027</p>
+                    <p><strong>Email:</strong> Info@skillamedtech.in</p>
+                    <p><strong>Phone 1:</strong> 011-4506 6413</p>
+                    <p><strong>Phone 2:</strong> +91 88400 32052</p>
+                </div>
+
+                <!-- <div class="contact-info">
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.916074614512!2d80.29815247525411!3d26.42618477694054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c47c7c6c274c7%3A0x96246d0cd5a59170!2sSkillam%20Education%20and%20Technology!5e0!3m2!1sen!2sin!4v1759064351138!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <h3>Kanpur Branch</h3>
+                    <p><strong>Address:</strong> Ground Floor, C-915, Thana Road, near Little Gems School, New, Barra, Kanpur, Uttar Pradesh 208027</p>
+                    <p><strong>Email:</strong> Info@skillamedtech.in</p>
+                    <p><strong>Phone 1:</strong> 011-4506 6413</p>
+                    <p><strong>Phone 2:</strong> +91 88400 32052</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+               
+                <!-- Footer Logo & About -->
+                <div class="footer-about">
+                    <img src="images/skillam logo.webp" alt="Skillam Logo" class="footer-logo" loading="lazy">
+                    <p>Your trusted English learning institute for a brighter future.</p>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Our Courses -->
+                <div class="footer-courses">
+                    <h3>Our Courses</h3>
+                    <ul>
+                        <li><a href="english.html">English Language</a></li>
+                        <li><a href="aviation.html">Aviation Training</a></li>
+                        <li><a href="computer.html">Computer Training</a></li>
+                        <li><a href="#">CAD Course</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><strong>Delhi Branch:</strong> Metro Pillar No. 796, Dwarka Mor, Plot No. 456 1st Floor, New Delhi, Delhi 110078</p>
+                    <p><strong>Kanpur Branch:</strong> Ground Floor, C-915, Thana Road, near Little Gems School, New, Barra, Kanpur, Uttar Pradesh 208027</p>
+                    <p><strong>Email:</strong> Info@skillamedtech.in</p>
+                    <p><strong>Phone:</strong> 011-4506 6413, +91 81308 46706</p>
+                </div>
+    
+            </div>
+    
+            <!-- Social Media & Copyright -->
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.instagram.com/skillam_edtech/" target="_blank"><img src="images/instagram.webp" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@SKILLUP_WITH_SKILLAM" target="_blank"><img src="images/youtube.webp" alt="YouTube"></a>
+                </div>
+                <p>© 2025 Skillam. All rights reserved.</p>
+                <p>Developed by <a href="https://www.linkedin.com/in/siddharth-singh10x/" target="_blank" class="siddharth-link">Siddharth Singh</a></p>
+            </div>
+    
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918130846706" class="whatsapp-button" target="_blank">
+        <img src="images/whatsapp.webp" alt="WhatsApp">
+    </a>
+
+     <!-- PAY AFTER PLACEMENT POPUP -->
+    <div id="pap-popup" class="pap-popup">
+    <div class="pap-popup-content">
+        <button class="pap-close">×</button>
+        <a href="aviation.html"><img src="images/pay after.webp" alt="Pay After Placement" /></a>
+    </div>
+    </div>
+
+    <!-- js  -->
+    <script src="js/script.js"></script>
+    
+</body>
+</html>

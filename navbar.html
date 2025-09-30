@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skillam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/skillam logo.png"> 
+</head>
+<body>
+    <!-- Navbar Section -->
+    <!-- Navbar for Mobile-->
+    <nav class="navbar">
+        <a class="anav" href="index.html"><div class="logo">Skillam</div></a>
+
+        <div class="navbar-right">
+        <a href="tel:+91 81308 46706" class="call-link">
+             +91 81308 46706
+        </a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="close-menu" onclick="toggleMenu()">'</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+       
+        <!-- Courses Dropdown -->
+        <div class="expandable" onclick="toggleDropdown('coursesDropdown')">
+            Courses <span>▶</span>
+        </div>
+        <div class="mobile-dropdown" id="coursesDropdown">
+            <a href="english.html">English</a>
+           
+            <!-- Aviation Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('aviationDropdown')">
+                Aviation <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="aviationDropdown">
+                <a href="aviation.html#cabin">Cabin Crew</a>
+                <a href="aviation.html#ground">Ground Staff</a>
+                <a href="aviation.html#aocs">AO Course</a>
+            </div>
+           
+            <!-- Computer Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('computerDropdown')">
+                Computer <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="computerDropdown">
+                <a href="computer.html#basic">Basic Computer</a>
+                <a href="computer.html#advanced">Advanced Computer</a>
+            </div>
+
+            <!-- CAD Course Subcategories -->
+            <div class="expandable" onclick="toggleDropdown('cadDropdown')">
+                CAD Course <span>▶</span>
+            </div>
+            <div class="mobile-dropdown" id="cadDropdown">
+                <a href="#">1 Course</a>
+                <a href="#">2 Course</a>
+                <a href="#">3 Course</a>
+                <a href="#">4 Course</a>
+            </div>
+        </div>
+
+        <a href="gallery.html">Gallery</a>
+        <a href="index.html#contact">Contact Us</a>
+        <a href="tel:+918130846706" class="phone-btn">📞 +91 81308 46706</a>
+    </div>
+
+    <!-- Navbar for Desktop -->
+    <nav class="navbard">
+        <a class="anavd" href="index.html"><div class="logod">Skillam</div></a> 
+        <ul class="nav-linksd" id="nav-linksd">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdownd">
+                <a href="#">Courses ▼</a>
+                <ul class="dropdown-menud">
+                    <li><a href="english.html">English Language</a></li>
+                    <li class="dropdownd">
+                        <a href="#">Aviation Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="aviation.html#cabin">Cabin Crew Training</a></li>
+                            <li><a href="aviation.html#ground">Ground Staff Training</a></li>
+                            <li><a href="aviation.html#aocs">AO/CS Training</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">Computer Training ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="computer.html#basic">Basic Computer</a></li>
+                            <li><a href="computer.html#advanced">Advance Computer</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdownd">
+                        <a href="#">CAD Course ▶</a>
+                        <ul class="dropdown-menud">
+                            <li><a href="#">1st Course</a></li>
+                            <li><a href="#">2nd Course</a></li>
+                            <li><a href="#">3rd Course</a></li>
+                            <li><a href="#">4th Course</a></li>
+                            <li><a href="#">5th Course</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- js  -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>
